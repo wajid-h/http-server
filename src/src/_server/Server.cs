@@ -25,8 +25,6 @@ namespace HTTPServer
         public static async Task Main(params string[] args)
         {   
 
-            var v =int.Parse("ff23ded", System.Globalization.NumberStyles.AllowHexSpecifier);
-            Console.WriteLine(v);
 
             Log.Logger = new LoggerConfiguration()
                 .MinimumLevel.Information()

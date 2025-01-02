@@ -8,9 +8,20 @@ namespace HTTPServer.Decoding
 {
     public class Decoder(Connection connection, byte[] rawHttpMessage)
     {
-        public DecodedHTTPMessage? Request { get => request ?? Decode(); }
+        public DecodedHTTPMessage? Request {
+             get {
+                if(request != null)
+                return request ; 
+                else
+                {
+                    request =  Decode();
+                    return  request;
+                }
+
+             } 
+        }
         
-        private readonly DecodedHTTPMessage? request =  null;
+        private  DecodedHTTPMessage? request =  null;
         private readonly byte[] rawRequest = rawHttpMessage;
         private readonly Connection connectionInfo = connection;
 

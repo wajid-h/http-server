@@ -6,13 +6,8 @@ using Serilog;
 
 namespace HTTPServer
 {
-
-
     public class HTMLResponder
-    {
-
-  
-
+    { 
         public static async void SendHTMLResponse( Connection request, string htmlFilePath,  Dictionary<object, object>? renderContext = default, bool disconnect =  true)
         {
             try
@@ -34,13 +29,12 @@ namespace HTTPServer
             
                     +$"{Constants.CRLF}{html}";
 
-                Log.Debug($"Pushing document to -> {request.RemoteEndPoint}");
+                Log.Information($"Pushing document '{htmlFilePath}'to -> {request.RemoteEndPoint}");
 
                 if (request.RemoteEndPoint != null)
                     _ = await request.Socket.SendToAsync(Encoding.ASCII.GetBytes(response), request.RemoteEndPoint);
                 if(disconnect)
                 request.Disconnect();
-
             }
             catch (AccessViolationException EX)
             {
