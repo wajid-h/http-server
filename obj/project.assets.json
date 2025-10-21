@@ -95,11 +95,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/mnt/nvme0n1p3/dotnet-projects/http-server/httpserver.csproj",
+      "projectUniqueName": "/media/wajid/data/dotnet-projects/http-server/httpserver.csproj",
       "projectName": "httpserver",
-      "projectPath": "/mnt/nvme0n1p3/dotnet-projects/http-server/httpserver.csproj",
+      "projectPath": "/media/wajid/data/dotnet-projects/http-server/httpserver.csproj",
       "packagesPath": "/home/wajid/.nuget/packages/",
-      "outputPath": "/mnt/nvme0n1p3/dotnet-projects/http-server/obj/",
+      "outputPath": "/media/wajid/data/dotnet-projects/http-server/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/wajid/.nuget/NuGet/NuGet.Config"
@@ -156,7 +156,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/home/wajid/.dotnet/sdk/8.0.414/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/home/wajid/.dotnet/sdk/8.0.415/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

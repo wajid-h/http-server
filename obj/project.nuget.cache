@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "OARFucV6CNs=",
+  "dgSpecHash": "ADnAsJOvdZ8=",
   "success": true,
-  "projectFilePath": "/mnt/nvme0n1p3/dotnet-projects/http-server/httpserver.csproj",
+  "projectFilePath": "/media/wajid/data/dotnet-projects/http-server/httpserver.csproj",
   "expectedPackageFiles": [
     "/home/wajid/.nuget/packages/serilog/4.2.0/serilog.4.2.0.nupkg.sha512",
     "/home/wajid/.nuget/packages/serilog.sinks.console/6.0.0/serilog.sinks.console.6.0.0.nupkg.sha512"
